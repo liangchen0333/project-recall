@@ -1,0 +1,4 @@
+interface:
+  display_name: "Recall · 项目回忆"
+  short_description: "恢复项目坐标，但不自动开工"
+  default_prompt: "使用 $project-recall 打开回忆清晰度选择器。只显示清楚、模糊、断片三个按钮，不要读取项目或开始工作。"

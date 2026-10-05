@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "project_id": "replace-with-generated-id",
+  "project_name": "Project name",
+  "status": "active",
+  "outcome": "",
+  "current_focus": "",
+  "next_action": "",
+  "priority": {
+    "now": [],
+    "next": [],
+    "later": []
+  },
+  "blockers": [],
+  "waiting_for": [],
+  "recent_decisions": [],
+  "open_loops": [],
+  "last_meaningful_activity": null,
+  "last_checkpoint": "",
+  "urgency": {
+    "level": "normal",
+    "due_at": null,
+    "reason": ""
+  },
+  "energy_options": {
+    "low": "",
+    "normal": "",
+    "deep": ""
+  }
+}

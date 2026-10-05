@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "skill": "project-recall",
+  "cases": [
+    {
+      "id": "explicit-picker-zh",
+      "category": "explicit",
+      "prompt": "使用 $project-recall",
+      "should_trigger": true,
+      "expected_mode": "picker",
+      "must": ["show three clarity choices", "not read project state", "not begin project work"]
+    },
+    {
+      "id": "explicit-full-recall-zh",
+      "category": "explicit",
+      "prompt": "使用 $project-recall 回忆这个项目：断片。只回忆，不开始工作。",
+      "should_trigger": true,
+      "expected_mode": "resume",
+      "must": ["use full recall depth", "include project coordinate", "stop before execution"]
+    },
+    {
+      "id": "implicit-recall-en",
+      "category": "implicit",
+      "prompt": "I have completely forgotten where I left this project. Help me reconstruct it, but don't start working yet.",
+      "should_trigger": true,
+      "expected_mode": "resume",
+      "must": ["orient the user", "offer one gentle next step", "stop before execution"]
+    },
+    {
+      "id": "checkpoint-zh",
+      "category": "contextual",
+      "prompt": "今天先到这里，帮我保存下次接着做需要记住的进度。",
+      "should_trigger": true,
+      "expected_mode": "checkpoint",
+      "must": ["use conversation evidence", "write one focused state update", "not rerun project tests solely for checkpoint"]
+    },
+    {
+      "id": "dashboard-zh",
+      "category": "explicit",
+      "prompt": "使用 $project-recall 今日驾驶舱，看看我有哪些项目需要注意。",
+      "should_trigger": true,
+      "expected_mode": "dashboard",
+      "must": ["read registry", "separate urgency from staleness", "remain read-only"]
+    },
+    {
+      "id": "negative-bare-continue-zh",
+      "category": "negative",
+      "prompt": "继续",
+      "should_trigger": false,
+      "expected_mode": null,
+      "must": ["continue only already-authorized active work"]
+    },
+    {
+      "id": "negative-bare-continue-en",
+      "category": "negative",
+      "prompt": "continue",
+      "should_trigger": false,
+      "expected_mode": null,
+      "must": ["not read recall state solely because of this prompt"]
+    },
+    {
+      "id": "negative-unrelated-memory",
+      "category": "negative",
+      "prompt": "How does memory allocation work in Python?",
+      "should_trigger": false,
+      "expected_mode": null,
+      "must": ["not confuse technical memory with project recall"]
+    }
+  ]
+}
+

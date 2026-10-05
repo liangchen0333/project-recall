@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "project-recall",
+  "version": "0.6.0",
+  "description": "Adaptive project memory and low-friction re-entry for long-running work.",
+  "author": {
+    "name": "liangchen0333",
+    "url": "https://github.com/liangchen0333"
+  },
+  "homepage": "https://github.com/liangchen0333/project-recall",
+  "repository": "https://github.com/liangchen0333/project-recall",
+  "license": "MIT",
+  "keywords": ["productivity", "project-memory", "adhd", "context-recovery", "codex"],
+  "extensions": {
+    "com.openai": {
+      "hooks": "./hooks/hooks.json"
+    }
+  }
+}

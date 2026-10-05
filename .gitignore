@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.tmp-project-recall/
+.test-tmp/
+.install-staging/
+.coverage
+coverage.xml
+.pytest_cache/

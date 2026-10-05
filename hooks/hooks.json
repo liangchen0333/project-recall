@@ -1,0 +1,20 @@
+{
+  "description": "Load adaptive project recall context when a Codex session starts or resumes.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "^(startup|resume)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${PLUGIN_ROOT}/skills/project-recall/scripts/project_recall.py\" hook",
+            "commandWindows": "python \"${PLUGIN_ROOT}/skills/project-recall/scripts/project_recall.py\" hook",
+            "timeout": 5,
+            "statusMessage": "Loading project recall context",
+            "additionalContextLimit": 2500
+          }
+        ]
+      }
+    ]
+  }
+}
