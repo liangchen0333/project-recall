@@ -4,6 +4,12 @@ All notable changes to this project will be documented here.
 
 ## [Unreleased]
 
+## [0.6.1] - 2026-10-06
+
+### Changed
+
+- Updated GitHub Actions to their Node 24-based major versions, removing runner deprecation warnings.
+
 ## [0.6.0] - 2026-10-02
 
 ### Added

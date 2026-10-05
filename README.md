@@ -145,7 +145,7 @@ The prompt-level trigger scenarios in [evals/trigger-cases.json](evals/trigger-c
 
 ## Project status
 
-Version 0.6.0 is release-candidate quality for local use. The canonical repository is `liangchen0333/project-recall`, released under the MIT License. Publishing now only requires creating the repository and release tag.
+Version 0.6.1 is published under the MIT License at `liangchen0333/project-recall`.
 
 ## License
 
